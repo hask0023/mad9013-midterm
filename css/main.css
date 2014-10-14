@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+    -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+    text-align:center;
+}
+h1{
+	font-size: 3.6rem;
+    font-family: 'Dancing Script', cursive;
+    background-color: #64677F;
+    
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Alegreya', serif;
+    
+    
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'Alegreya', serif;
+	color: #494949;	
+    overflow:auto;
+}
+p, li, a{
+	font-weight: 400;
+	font-family: 'PT Sans', sans-serif;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+    
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;
+    margin: 0 auto;
+    max-width: 960px;
+    
+}
+.masthead{
+	
+}
+.nav{
+
+	
+}
+.navbar{
+	float:left;
+}
+
+.main, .two, .three{
+    max-height: 700px;
+    overflow: scroll;
+}
+.main{
+	float:left;
+    background-color: #ADB7FF;
+    
+    
+}
+
+.two{
+    
+    background-color: #9FA5CC;
+    
+}
+
+.three{
+    background-color: #C7CEFF;
+    
+    }
+}
+.sidebar{
+	
+}
+.footer{
+	
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	width: 240px;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #6F717F;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+}
+
+/* First layout style */
+@media screen and (min-width: 1081px) {
+    .nav, .main, .two, .three{
+        float:left;
+        margin-top: 1%;
+        
+    }
+    .nav{
+        width:14%;
+        margin-left: 1%;
+    }
+    .main{
+        width: 43%;
+        margin: 1% 1% 0 1%;
+        
+        
+        
+    }
+    
+    .two {
+        width: 19%;
+        margin-right: 1%;
+    }
+    .three {
+        width: 19%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .navbar li{
+        width: 100%;
+        
+    }
+        .footer{
+        clear:both;
+    }
+}
+
+/* Second layout style */
+@media screen and (max-width: 1080px) {
+    .main, .two, .three{
+        float: left;   
+    }
+    .navbar{
+        width:100%;
+        margin-bottom: 1%;
+    }
+    .navbar li{
+        width: 25%;
+    }
+        .main{
+            width: 48%;
+            margin-left: 1%;
+            
+        }
+        .two{
+            width: 24%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+    .three{
+        width: 24%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    
+    .footer{
+        clear:both;
+    }
+}
+
+/* Third layout style */
+@media screen and (max-width: 719px) {
+    .two{
+        float: left;
+        width: 48.5%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .three{
+        float: left;
+        width: 48.5%;
+        margin: 0 1% 1% 0;
+        
+    }
+    .main{
+        width: 98%;
+        margin: 0 0 1% 1%;
+    }
+    .footer{
+        clear:both;
+    }
+}
+
+/* Fourth layout style */
+@media screen and (max-width: 499px) {
+    
+
+    .navbar li{
+        width:50%;
+            
+    }
+    .main{
+        float:none;
+        width:98%;
+        margin: 1% 1% 1% 1%;
+        clear:both;
+}
+    .two{
+        float:none;
+        width:98%;
+        margin: 0 1% 1% 1%;
+    }
+    .three{
+        float:none;
+        width:98%;
+        margin: 0 1% 1% 1%;
+    }
